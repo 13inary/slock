@@ -5,7 +5,7 @@ static const char *group = "nogroup";
 static const char *colorname[NUMCOLS] = {
 	[BACKGROUND] =   "black",     /* after initialization */
 	[INIT] =   "#a8a8a8",     /* after initialization #2d2d2d*/
-	[INPUT] =  "#ffaf00",   /* during input #005577*/
+	[INPUT] =  "#00afff",   /* during input #005577*/
 	[FAILED] = "#ff0000",   /* wrong password #CC3333*/
 };
 
@@ -14,28 +14,28 @@ static const int failonclear = 1;
 
 /* insert grid pattern with scale 1:1, the size can be changed with logosize */
 static const int logosize = 75;
-static const int logow = 18;	/* grid width and height for right center alignment*/
-static const int logoh = 7;
+static const int logow = 14;	/* grid width and height for right center alignment*/
+static const int logoh = 9;
 
-static XRectangle rectangles[15] = {
+static XRectangle rectangles[9] = {
 	/* x	y	w	h */
-	{ 0,	5,	4,	1 },
-	{ 3,	0,	1,	5 },
+	{ 1,	2,	1,	5 },
 
-	{ 5,	3,	1,	3 },
-	{ 6,	3,	1,	1 },
-	{ 6,	5,	1,	1 },
-	{ 7,	3,	1,	3 },
-	{ 8,	5,	1,	1 },
+	{ 2,	1,	5,	1 },
 
-	{ 10,	3,	1,	2 },
-	{ 11,	5,	1,	1 },
-	{ 12,	3,	1,	2 },
+	{ 3,	3,	3,	1 },
 
-	{ 14,	3,	1,	3 },
-	{ 15,	3,	1,	1 },
-	{ 15,	5,	1,	1 },
-	{ 16,	3,	1,	3 },
-	{ 17,	5,	1,	1 },
+	{ 2,	6,	3,	1 },
+
+	{ 5,	4,	1,	4 },
+
+
+	{ 9,	3,	1,	4 },
+
+	{ 10,	3,	2,	1 },
+
+	{ 10,	6,	2,	1 },
+
+	{ 12,	3,	1,	4 },
 
 };
